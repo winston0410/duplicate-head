@@ -10,7 +10,9 @@
 </script>
 
 <svelte:head>
-    {@html mkSchema(orgSchema)}
+    <script type="application/ld+json">
+        {@html mkSchema(orgSchema)}
+    </script>
 </svelte:head>
 
 <h1>Welcome to SvelteKit</h1>
